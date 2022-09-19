@@ -56,7 +56,7 @@ $max-device-width: 540px;
 
 /* 单位rem转化为px，可用于根据rem单位快速计算原px */
 @function rem2px($rem) {
-  @return #{math.div($px, $design-width) * $design-width}px;
+  @return #{math.div($rem, $design-width) * $design-width}px;
 }
 
 /**
